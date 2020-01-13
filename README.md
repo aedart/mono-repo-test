@@ -1,3 +1,3 @@
 # mono-repo-test
 
-Test of various mono repository tools.
+Test of [mono repository tool](https://github.com/Symplify/MonorepoBuilder).
