@@ -23,7 +23,7 @@
         "php": ">=7.4.0"
     },
     "require-dev": {
-
+        "symplify/monorepo-builder": "^7.2"
     },
     "suggest": {
 
