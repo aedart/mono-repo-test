@@ -1,0 +1,13 @@
+{
+    "name": "your-monorepo/second-package",
+    "require": {
+        "php": "^7.1",
+        "symfony/dependency-injection": "^4.1",
+        "your-monorepo/first-package": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourMonorepo\\SecondPackage\\": "src"
+        }
+    }
+}

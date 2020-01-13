@@ -1,0 +1,13 @@
+{
+    "name": "your-monorepo/third-package",
+    "require": {
+        "php": "^7.1",
+        "symfony/console": "^3.1",
+        "your-monorepo/second-package": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "YourMonorepo\\ThirdPackage\\": ""
+        }
+    }
+}

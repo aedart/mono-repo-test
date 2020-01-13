@@ -1,41 +1,41 @@
 {
     "name": "aedart/mono-repo-test",
+    "type": "library",
     "description": "A test of mono repository tools",
-    "keywords": [
-        "mono repository",
-        "tools",
-        "test"
-    ],
+    "keywords": ["mono repository", "tools", "test"],
     "homepage": "https://github.com/aedart/mono-repo-test",
     "license": "BSD-3-Clause",
-    "type": "library",
     "authors": [
         {
             "name": "Alin Eugen Deac",
             "email": "aedart@gmail.com"
         }
     ],
-    "autoload": {
-    },
-    "autoload-dev": {
-    },
     "require": {
-        "php": ">=7.4.0"
+        "php": "^7.1",
+        "symfony/console": "^3.1",
+        "symfony/dependency-injection": "^4.1",
+        "symfony/http-kernel": "^4.1"
     },
     "require-dev": {
-        "symplify/monorepo-builder": "^7.2"
+        "phpunit/phpunit": "^7.3",
+        "symplify/monorepo-builder": "^7.3"
     },
-    "suggest": {
-
-    },
-    "minimum-stability": "stable",
-    "prefer-stable": true,
-    "scripts": {
-
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
+    "autoload": {
+        "psr-4": {
+            "YourMonorepo\\FirstPackage\\": "src/first-package/src",
+            "YourMonorepo\\SecondPackage\\": "src/second-package/src",
+            "YourMonorepo\\ThirdPackage\\": "src/third-package/"
         }
-    }
+    },
+    "autoload-dev": [],
+    "replace": {
+        "your-monorepo/first-package": "self.version",
+        "your-monorepo/second-package": "self.version",
+        "your-monorepo/third-package": "self.version"
+    },
+    "scripts": [],
+    "suggest": [],
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
