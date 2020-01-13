@@ -1,0 +1,13 @@
+/vendor
+.DS_Store
+.idea/
+Thumbs.db
+composer.lock
+composer.phar
+
+yarn.lock
+/node_modules
+.build/
+
+# Ignore various environment files in root directory
+.env
