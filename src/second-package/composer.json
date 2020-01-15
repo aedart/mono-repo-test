@@ -1,7 +1,7 @@
 {
     "name": "your-monorepo/second-package",
     "require": {
-        "php": "^7.1",
+        "php": "^7.2",
         "symfony/dependency-injection": "^4.1",
         "your-monorepo/first-package": "^1.2"
     },

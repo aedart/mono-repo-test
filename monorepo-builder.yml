@@ -9,6 +9,7 @@ parameters:
         - 'require-dev'
         - 'autoload'
         - 'autoload-dev'
+        - 'suggest'
 
     # for "merge" command
     data_to_append:
